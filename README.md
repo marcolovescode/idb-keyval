@@ -75,7 +75,7 @@ By default, the methods above use an IndexedDB database named `keyval-store` and
 ```js
 import { Store, set } from 'idb-keyval';
 
-const customStore = new Store('custom-db-name', 'custom-store-name');
+const customStore = new Store('custom-db-name', 'custom-store-name', 1); // your schema version number
 set('foo', 'bar', customStore);
 ```
 
